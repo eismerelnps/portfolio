@@ -1,0 +1,31 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Desarrollador web fullstack",
+    company: "Freelancer",
+    description:
+      "Implementación desde 0, así como liderando mi propio equipo de desarrollo el proyecto ChatCubano a partir de un contrato de trabajo de manera freelancer ",
+    link: "https://elchatcubano1.com.br/es/chat",
+  },
+  {
+    date: "Octubre, 2023",
+    title: "Desarrollador web frontend",
+    company: "Avangenio SURL",
+    description:
+      "Encargado de la maquetación, optimización e integracion de componentes así como de aplicaciones webs más robustas y complejas a lo largo de mi contrato de trabajo asumiendo diversos desafíos.  ",
+    link: "https://avangenio.com/",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
