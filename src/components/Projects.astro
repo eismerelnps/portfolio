@@ -12,13 +12,20 @@ import MongoDB from "./icons/MongoDB.astro";
 import ExpresJs from "./icons/ExpressJs.astro";
 import Redux from "./icons/Redux.astro";
 import Javascript from "./icons/Redux.astro";
+import NestJs from "./icons/NestJs.astro";
+import Express from "./icons/Express.astro";
 
 const TAGS = {
   NEXT: {
-    name: "Next.js",
+    name: "Nest.js",
     class: "bg-black text-white",
     icon: NextJS,
   },
+    NEST: {
+        name: "Next.js",
+        class: "bg-black text-white",
+        icon: NestJs,
+    },
   TAILWIND: {
     name: "Tailwind CSS",
     class: "bg-[#003159] text-white",
@@ -46,8 +53,8 @@ const TAGS = {
   },
   EXPRESS_JS: {
     name: "Express Js",
-    class: "bg-[#003159] text-white",
-    icon: ExpresJs,
+    class: "bg-white text-black",
+    icon: Express,
   },
   REDUX: {
     name: "Redux",
@@ -61,10 +68,40 @@ const TAGS = {
   },
 };
 const PROJECTS = [
+    {
+        title: "InMas - Inventory Management System",
+        description: "InMas Soft es una aplicación web de gestión de inventarios y negocios que lideré y desarrollé desde cero. El software, diseñado para optimizar operaciones en Cuba, incluye módulos de TPV-POS, tiendas online, catálogos digitales y automatización de procesos. Mi objetivo fue construir un un sistema para la gestión de mi propio negocio, y ha tenido un impacto positivo en el mercado privado cubano, logrando la confianza de más de 10 clientes.",
+        link: "https://inmas.vercel.app",
+        github: "",
+        image: "/projects/inmas.png",
+        tags: [
+            TAGS.NEXT,
+            TAGS.TYPESCRIPT,
+            TAGS.TAILWIND,
+            TAGS.NODE_JS,
+            TAGS.MONGO_DB,
+            TAGS.REDUX,
+            TAGS.NEST,
+            TAGS.EXPRESS_JS
+        ],
+    },
+    {
+        title: "MeRewards - CashBack System",
+        description: "MeRewards es una plataforma de fidelización de clientes y cashback desarrollada de manera freelance. La aplicación web multi-sección ofrece a los negocios un sistema de recompensas con promociones, descuentos y cashback. El proyecto cuenta con roles de usuario para administradores, cajeros y clientes, lo que demuestra mi capacidad para crear soluciones robustas y completas.",
+        link: "https://me-rewards.com/home",
+        github: "",
+        image: "/projects/merewards.png",
+        tags: [
+            TAGS.NEXT,
+            TAGS.TYPESCRIPT,
+            TAGS.TAILWIND,
+            TAGS.REDUX,
+            TAGS.NEST,
+        ],
+    },
   {
     title: "GestCad - Candidate Magnament System",
-    description:
-      "A candidate management system for a software development company is based on 4 modules, for the candidate, for the administrator, for suppliers and clients",
+    description: "El sistema de gestión de candidatos de una empresa de desarrollo de software está basado en 4 módulos: para el candidato, para el administrador, para los proveedores y para los clientes.",
     link: "https://gestcad-front.vercel.app/",
     github: "",
     image: "/projects/gestcad.png",
@@ -75,12 +112,12 @@ const PROJECTS = [
       TAGS.SOCKET_IO,
       TAGS.MONGO_DB,
       TAGS.REDUX,
+        TAGS.NEST,
     ],
   },
   {
     title: "Chat Cubano - A chat app inpired on telegram",
-    description:
-      "An instant messaging web application, designed for Cubans, is currently in development, the objective is to build on the strengths of Telegram, as well as implement the rest of the client's needs. Created from scratch by me with Next.js, React, Tailwind CSS, Redux, Redux Toolkit, Node JS, Socket IO, Express JS and Mongo DB",
+    description: "Una aplicación web de mensajería instantánea, diseñada para cubanos, se encuentra actualmente en desarrollo. El objetivo es aprovechar las fortalezas de Telegram y, a la vez, implementar el resto de las necesidades del cliente. Creada desde cero por mí con Next.js, React, Tailwind CSS, Redux, Redux Toolkit, Node.js, Socket.IO, Express.js y MongoDB.",
     link: "https://elchatcubano1.com.br/",
     github: "",
     image: "/projects/chatcubano.png",
@@ -96,8 +133,7 @@ const PROJECTS = [
   },
   {
     title: "School schedule - A school schedule for your educational center",
-    description:
-      "Currently in development, it is a school schedule with 3 modules: Student, Teacher and administrator, where you can create and manage schools and the class schedules of your center as well as the teachers who will teach it.",
+    description: "Un horario escolar en desarrollo que cuenta con 3 módulos: para el estudiante, para el profesor y para el administrador. Con este sistema puedes crear y gestionar escuelas, los horarios de clase y los profesores que las impartirán.",
     link: "https://school-hours.vercel.app/es/week",
     github: "",
     image: "/projects/schedule.png",
