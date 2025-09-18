@@ -4,8 +4,6 @@ import vercel from '@astrojs/vercel/serverless';
 import robotsTxt from "astro-robots-txt";
 
 
-
-
 // https://astro.build/config
 export default defineConfig({
   output: 'server',
@@ -14,7 +12,7 @@ export default defineConfig({
         webAnalytics: {
           enabled: true,
         },
-        runtime: 'nodejs18.x',
+        runtime: 'nodejs20.x',
         mode: 'serverless'
       }),
   integrations: [tailwind(), robotsTxt()],
