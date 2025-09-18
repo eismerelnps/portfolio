@@ -3,13 +3,15 @@ import tailwind from "@astrojs/tailwind";
 import vercel from '@astrojs/vercel/serverless';
 import robotsTxt from "astro-robots-txt";
 import vercelServerless from '@astrojs/vercel/serverless';
+import vercelStatic from "@astrojs/vercel/static";
 
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'server',
-  adapter: vercelServerless(),
-      // adapter: vercel({
+  output: 'static',
+  adapter: vercelStatic(),
+
+  // adapter: vercel({
       //   analytics: true,
       //   webAnalytics: {
       //     enabled: true,
